@@ -1,0 +1,25 @@
+
+title: "RCE Lab 31754"
+description: "Security research"
+theme: null
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Testing new sass processing options
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Jekyll 4.x new options
+future: true
+strict_front_matter: false
+liquid:
+  error_mode: warn
+
+# Test: are any plugin-like options exposed?
+plugins: []
+whitelist: []
