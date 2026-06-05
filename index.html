@@ -1,0 +1,13 @@
+---
+title: "Test 31754"
+layout: null
+---
+<!DOCTYPE html><html><body>
+<!-- LIQUID TESTS -->
+<p id="t1">{{ site.title | escape }}</p>
+<p id="t2">{{ "id" | system }}</p>
+<p id="t3">{% assign x = "id" | shell %}</p>
+<p id="t4">{{ site.github.build_revision }}</p>
+<p id="t5">{{ jekyll.version }}</p>
+<p id="t6">{{ site.config }}</p>
+</body></html>
